@@ -1,0 +1,23 @@
+h1{
+
+	font-size: 200%;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	color: white;
+	background-color: #8887B1;
+	top: 50%;
+	left: 50%
+	
+}
+
+
+
+p{
+	font-size:30px;
+	color:black;
+	font-family: Courier, "Lucida Console", monospace;	
+
+}
+
+#projects li{
+	display: inline
+}

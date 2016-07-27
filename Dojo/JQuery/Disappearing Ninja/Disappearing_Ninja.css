@@ -1,0 +1,35 @@
+*{
+ margin: 0px; auto;
+ padding: 0px;
+ font-family: "Tahoma";
+ text-align: center;
+}
+
+#wrapper{
+	width: 966px;
+	margin: 0px auto;
+	padding:5px;
+}
+
+#ninjapics{
+	height: 800px
+	width: 900px;
+}
+
+#ninjapics h1{
+	margin-bottom: 10px;
+	font-size: 40px;
+}
+
+#ninjapics img{
+	padding:5px;
+}
+
+button{
+	margin: 5px auto auto auto;
+	padding: 15px;
+	background-color: orange;
+	color: black;
+	display: block;
+}
+	

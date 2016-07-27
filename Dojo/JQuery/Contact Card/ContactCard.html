@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    	<meta charset="UTF-8">
+        <title>Contact Card</title>
+        <meta name="description" content= "This is an assignment to learn JQuery">
+        <link rel="stylesheet" type="text/css" href="ContactCard.css">
+    	<script src= 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+        <title>Contact Card</title>
+        
+        <script type="text/javascript">
+        	$(document).ready(function() {
+        		$( "button" ).click( function() {
+	        		$("#output").append("<div class='initial'>" + "<h3>" + $( "#first" ).val() + " " + $("#last").val() + "</h3>" + "<p>Click for description!</p>" + "</div>");
+	        	return false;
+        		});
+        	});
+        	$( document ).on("click", "p", function() {
+                $(".initial").hide( function() {
+                    $( this ).replaceWith("<div>" + $("#descript").val() +
+                        "</div>");
+                });
+        	});
+        </script>
+    </head>
+    <body>
+        <div id="wrapper">
+        	<div id="input">
+                <h1>Contact Form!!!</h1>
+        		<form>
+        			<label>
+        				First Name: <input id="first" type="text" name="first"/>
+        			</label>
+        			<label>
+        				Last Name: <input id="last" type="text" name="last"/>
+        			</label>
+        			<label>
+        				Description: <textarea id="descript" name="description"></textarea>
+        			</label>
+        			<button>Add User</button>
+        		</form>
+        	</div>
+        	<div id="output">
+
+        	</div>
+        </div>
+    </body>
+</html>        

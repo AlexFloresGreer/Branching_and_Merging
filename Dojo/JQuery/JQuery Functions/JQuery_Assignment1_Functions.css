@@ -1,0 +1,40 @@
+*{
+ margin: 0px; auto;
+ padding: 0px;
+ font-family: "Tahoma";
+}
+
+#wrapper{
+	width: 960px;
+	margin: 0px auto;
+	padding:25px;
+}
+
+.color{
+	color: red;
+}
+
+#everything{
+	padding: 15px 200px 200px 200px;
+}
+
+	#everything h1{
+		font-size: 18px;
+	}
+
+
+#function5 span{
+	display: none;
+}
+
+#function13 p{
+	display: none;
+}
+
+#function14 img{
+	display: none;
+}
+
+/*#function15 img{
+	display: none;
+}*/

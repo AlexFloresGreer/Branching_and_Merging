@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Sortable Ninja</title>
+		<meta name="description" content= "This is an assignment to learn JQuery">
+		<link rel="stylesheet" type="text/css" href="SortableNinja.css">
+		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+		<script src="http://code.jquery.com/jquery-1.8.2.js"></script>
+		<script src="http://code.jquery.com/ui/1.9.1/jquery-ui.js"></script>
+		<script type="text/javascript">
+
+			$(document).ready(function(){	
+		// JQuery starts here!
+				$(function () {
+					$("#sortable").sortable();
+					$("#sortable").disableSelection();
+				});
+
+
+
+
+			}); 
+		// JQuery ends here!
+
+		</script>
+	</head>
+	<body> <!-- HTML Starts Here! -->
+
+		<h1>Ninja to Cat</h1>
+	<ul id="sortable">
+		<li><img src="cat0.png" class="pic"></li>
+		<li><img src="cat1.png" class="pic"></li>
+		<li><img src="cat2.png" class="pic"></li>
+		<li><img src="cat3.png" class="pic"></li>
+		<li><img src="cat4.png" class="pic"></li>
+
+
+
+	</body>
+</html>

@@ -1,0 +1,339 @@
+*{
+ margin: 0px; auto;
+ padding: 0px;
+ font-family: "Tahoma";
+}
+
+#wrapper{
+	width: 960px;
+	margin: 0px auto;
+	padding:5px;
+}
+
+#header{
+	height: 150px;
+	width: 960px;
+	margin: auto;
+
+}
+	
+	#header ul{
+		display: inline-block; 
+		background-color:  #f2f2f2;
+		border-radius: 5px;
+		border-color: grey;
+		margin-left: 450px;
+		width: 380px;
+		padding: 2px 5px 5px 5px;
+		font-size: 5px;
+		color: darkgrey;
+		
+		
+	}
+
+	#header ul li{
+		display: inline;
+		font-size: small;
+		padding: 2px 7px 0px 7px;
+		color: grey;
+		border-right: 1px solid grey;
+	}
+
+
+	#header ul li:last-child{
+		border:none;
+	}
+
+	#header a{
+		text-decoration: none;
+		color: gray;
+	}
+
+	#header button{
+		display: inline-block;
+		padding: 1px 10px 1px 10px;
+		margin-left: 10px;
+		background-color: blue;
+		color: white;
+		border-color: lightblue;
+		border-radius: 3px;
+		cursor: pointer;
+	}
+
+	#logo img{
+		border:black solid;
+		margin-left: 10px;
+		display: inline-block;
+	}
+
+
+	#logo h1{
+		display: inline-block;
+		vertical-align: top;
+		padding-top: 6px;
+		font-size: 50px;
+		
+	}
+
+	#word2 {
+		color: blue;
+		display: inline-block;
+	}
+
+	#word1 {
+		color: grey;
+		display: inline-block;
+	}
+
+	#blue{
+		font-size: 30px;
+		color: white;
+		background-color: blue;
+		padding: 7px 0px 7px 10px;
+		margin-top: 10px;
+	}
+
+#left{
+	height: 600px;
+	width: 250px;
+	display: inline-block;
+	vertical-align: top;
+	padding: 2px 0px 0px 2px;
+}
+
+	#topleft{
+		height: 60px; /*top of left bar*/
+		width: 300px;
+
+	}
+
+	#leftblue{
+		color: blue;
+		font-size: 18px;
+		margin-bottom: 10px;
+
+	}
+
+	#leftred{
+		color: red;
+		font-weight: bold;
+		font-size: 12px;
+		padding: 2px;
+
+
+	}
+	#leftcontent span{
+		color: blue;
+		font-size: 12px;
+
+	}
+	#leftcontent {
+		margin-bottom: 15px;
+	}
+
+	#button1, #button2{
+		display: block;
+		padding: 2px 20px 2px 20px;
+		font-size: 18px;
+		border-radius: 5px;
+		width: 210px;
+		margin-bottom: 5px;
+		color: white;
+		font-weight: bold;
+	}
+	#button1{
+		background-color: blue;
+	}
+
+	#button2{
+		background-color: orange;
+	}
+	#buttons p {
+		font-size: 13px;
+		margin-left: 20px;
+		margin-bottom: 10px;
+	}
+
+	#left hr{
+		margin: 0px 40px 0px 2px;
+		padding-bottom: 0px;
+		height: 1px;
+	}
+
+	#background{
+	    background-image: url(ruler.png);
+	    height: 227px;
+	    width: 184px;
+	    background-repeat: no-repeat;
+	    margin-top: 10px;
+	    margin-left: 7px;
+	    padding: 7px;
+	}
+	#background h3{
+		color: blue;
+		font-size:12px;
+		margin-bottom: 25px;
+
+	}
+
+	#background p{
+		font-size: 12px;
+		margin-bottom: 35px;
+
+	}
+
+	#background button{
+		background-color: blue;
+		color: white;
+		padding: 2px 15px 2px 15px;
+		font-size: 12px;
+		border-radius: 5px;
+		width: 180px;
+		margin-bottom: 5px;
+		color: white;
+		font-weight: bold;
+	}
+
+/*Right side main content ohhyeahhh*/
+#maincontent{
+	display: inline-block;
+	vertical-align: top;
+	height: 600px;
+	width: 685px;
+	padding: 5px;
+	margin-left: -5px; 
+}
+
+
+	#topmain{
+		height: 70px;
+	}
+
+	#house{
+		display: inline-block;
+		vertical-align: top;
+	}
+
+	#house p{
+		display: inline-block;
+		color: blue;
+	}
+
+	#phone{	
+		display: inline-block;
+		vertical-align: top;
+		width: 196px;
+    	height: 55px;
+		padding:1px;
+		margin-left:395px;		}
+
+	#phone img{
+		display: inline-block;
+	}
+
+	#little_text{
+		display: inline-block;
+		vertical-align: top;
+		
+	}
+
+	#little_text .little{
+		font-size: 11px;
+		color: darkgrey;
+
+	}
+
+	#little_text p{
+		font-size: 18px;
+		color: blue;
+	}
+/*main info, lots of text on the right*/
+	#maininfo h1{
+		font-size: 15px;
+		color: blue;
+		margin-bottom: 10px
+	}
+
+	#maininfo {
+		font-size: 13px;
+		padding: 5px;
+	}
+
+	#maininfo p{
+		margin-bottom: 10px;
+	}
+	#maininfo span{
+		font-weight: bold;
+	}
+
+	#maininfo li{
+		list-style: inside;
+
+	}
+
+	#maininfo .last{
+		margin-top: 10px;
+	}
+
+	#maininfo #lastp, a,{
+		color: blue;
+		font-size: 12px;
+	}
+
+	 #maininfo #lastp, p{
+	 	font-size: 12px;
+	 }
+
+	 #lastp h3{
+	 	font-size: 14px;
+	 	color: blue;
+	 	margin-top: 20px;
+
+	 }
+	 /*box in middle*/
+
+	 #box{
+	 	border:blue solid;
+	 	height: 120px;
+    	width: 665px;
+	 }
+
+	 #box img{
+	 	display: inline-block;
+	 	vertical-align: top;
+
+	 }
+
+
+	 #box h1{
+	 	font-size: 13px;
+	 	color: blue;
+	
+	 }
+
+	 #right{
+	 	display: inline-block;
+	 	vertical-align: top;
+	 	width: 400px;
+	 	height: 120px;
+	 	padding: 5px;
+	 }
+
+
+	 #right h1{
+	 	color: blue;
+	 	font-size: 13px;
+	 	margin-bottom: 10px;
+	 }
+
+	 #Right p, span{
+	 	font-weight: bold;
+	 	margin-bottom: 10px;
+
+	 }
+
+	 #right button{
+	 	padding: 2px 5px 2px 5px;
+	 	background-color: green;
+	 	color: white;
+	 }

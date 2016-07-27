@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Functions</title>
+		<meta name="description" content= "This is an assignment to learn JQuery">
+		<link rel="stylesheet" type="text/css" href="JQuery_Assignment1_Functions.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){	
+
+				// your jQuery codes will go here!!!
+
+// add class
+			$('#function1 button').click(function (){
+				$('#function1 p').addClass('color');
+			});
+// slidetoggle
+			$('#function2 button').click(function (){
+				$('#function2 p').slideToggle();
+			});
+		
+//click
+			$("#function3 button").click(function (){
+				alert("YAY it works!");
+			});
+
+// append	
+			$('#function4 button').click(function (){
+				$('#function4 p').append('</b> Append Text WORKS. </b>');
+			});
+// focus
+			$('#function5 input').focus(function (){
+				$('#function5 span').css("display", "inline").fadeout(2000);					
+			});
+// Val 	NOT WORKING YET!!!
+			// $('#function6 button').click(function (){   
+			// 	alert($("function6 input:text").val());          		
+			// });
+// Text
+			$('#function7 button').click(function (){
+				$('#function7 p').text("Hello World! Text function is working!");
+			});
+// Attr NOT WORKING YET
+			// $('#function8 button').click(function (){
+			// 	.attr("p" , "Hello World");
+			// });
+// html
+			$('#function9 button').click(function (){
+				$('#function9 p').html("<b>Hello World, HTML is working!!!</p>");
+			});
+// data 
+			$("#btn1").click(function(){
+      			$("btn2").data("My favorite color", "Purple");
+		    });
+// before
+			$('#function11 button').click(function (){
+				$('#function11 p').before("Before function works!");
+			});
+// after 	
+			$('#function12 button').click(function (){
+				$('#function12 p').after("After works too!!!")
+			});
+// show & hide
+			$( "#showr" ).click(function() {
+  				$( ".13" ).first().show( "fast", function showNext() {
+  				$( this ).next( ".13" ).show( "fast", showNext );
+				});
+  			});
+ 				$( "#hidr" ).click(function() {
+ 				$( ".13" ).hide( 1000 );
+ 			});
+// toggle
+			$('#function14 button').click(function (){
+				$('#function14 img').toggle("fast", function() {
+				});
+			});
+// fade in and out
+			$(".b1").click(function(){
+        		$("#function15 p").fadeOut()
+    		});
+    		$(".b2").click(function(){
+       			 $("#function15 p").fadeIn();
+    		});
+			
+
+
+		});
+		// Jquery ends here!!!
+		</script>
+
+	</head>
+	<body>
+<!-- HTML STARTS HERE -->
+		<h1>JQuery Assignment #1</h1>
+
+		<div id="topbar"></div>
+			<button>left</button>
+			<button>right</button>
+			<button>X</button>
+
+			<div id="search_bar">
+				<form id="search" method="get" action="http://www.google.com">
+		       		<span><input type="text" class="text" name="q" value="Search" placeholder="Search..." size="10" maxlength="100"></span>
+		        	<input type="submit" value="search" class="button">
+				</form>
+			</div>
+			<hr>
+		</div>
+
+			<div id="everything"> <!--Functions start here-->
+
+	<!-- add class -->
+				<div id="function1">
+					<h1>1 Add Class</h1>
+					<p>Click the button to add class "red" to this paragraph</p>
+					<button>Add Class</button>
+				</div>
+
+				<hr>
+	<!-- slidetoggle --> 
+				<div id="function2">
+					<h1>2 Slidetoggle</h1>
+					<p>It's working!!!</p>
+					<button>Slidetoggle up() and down()</button>
+				</div>
+				<hr>
+	<!-- click -->
+				<div id="function3">
+					<h1>3 Click</h1>
+					<p>Click the button to create alert</p>
+					<button>Click Me!</button>
+				</div>
+				<hr>
+	<!-- append -->
+				<div id="function4">
+					<h1>4 Append</h1>
+					<p>Everytime button is clicked Append text here...</p>
+					<button>Append</button>
+				</div>
+				<hr>
+	<!-- focus -->
+				<div id="function5">
+					<h1>5 Focus</h1>
+					<p>Click filed to get focus!</p>
+					<input>
+					<span>Focus Works!!!!</span>
+					
+				</div>
+				<hr>
+	<!-- val NOT WORKING YET --> 																			
+				<div id="function6">
+					<h1>6 Val</h1>
+					Firstname: <input type="text" name="fname" value="Alex"><br>
+					Lastname: <input type="text" name="lname" value="Greer"><br>
+					<p>Value should pop up!</p>
+					<button>Get value of First Name!</button>
+				</div>
+				<hr>
+	<!-- text NOT WORKING YET -->
+				<div id="function7">
+					<h1>7 Text</h1>
+					<p>Click the button to change or add text here!</p>
+					<button>Click for Text</button>
+				</div>
+				<hr>
+	<!-- attr -->
+				<div id="function8">
+					<h1>8 Attr</h1>
+					<p>Click Attr button to change attribute</p>
+					<button>Attr</button>
+				</div>
+				<hr>
+	<!-- html -->
+				<div id="function9">
+					<h1>9 HTML</h1>
+					<p>Click the button to add/change HTML</p>
+					<button>html</button>
+				</div>
+				<hr>
+	<!-- data -->
+				<div id="function10">
+					<h1>10 Data</h1>
+					<p>Guess what's my fav color!</p>
+					<button id="btn1">Attach Data to this Button</button>
+					<button id="btn2">Get Data from this Button</button>
+				</div>
+				<hr>
+	<!-- before -->
+				<div id="function11">
+					<h1>11 Before</h1>
+					<p>Click the button to insert text before header</p>
+					<button>Before</button>
+				</div>
+				<hr>
+	<!-- after -->
+				<div id="function12">
+					<h1>After</h1>
+					<p>Click the button to insert text after button</p>
+					<button>After</button>
+				</div>
+				<hr>
+	<!-- show & hide-->
+				<div id="function13">
+					<h1>Show and Hide</h1>
+					<button id="showr">Show</button>
+					<button id="hidr">Hide</button>
+					<div class="13">Hi</div>
+					<div class="13">How</div>
+					<div class="13">Are</div>
+					<div class="13">You?</div>
+					
+				</div>
+				<hr>
+	
+	<!-- toggle -->
+				<div id="function14">
+					<h1>Toggle</h1>
+					<p>Click the button</p>
+					<img src="JQ.png" alt="pic.png">
+					<button>Toggle</button>
+				</div>
+				<hr>
+	<!-- fade in and out -->
+				<div id="function15">
+					<h1>Fade In and Fade Out</h1>
+					<p>Click the button!</p><br>
+					<br>
+					<button class="b1">Fade Out</button>
+					<button class="b2">Fade In</button>
+				</div>
+				<hr>
+	
+
+			
+			</div> <!--Everything/Functions ends here-->
+	</body>
+</html>

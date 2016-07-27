@@ -1,0 +1,41 @@
+*{
+ margin: 0px; auto;
+ padding: 0px;
+ font-family: "Tahoma";
+
+}
+
+#wrapper{
+	width: 960px;
+	margin: 0px auto;
+	padding: auto;
+}
+
+h1{
+	margin-bottom: 35px;
+}
+
+#table{
+	border: grey solid;
+	margin-bottom: 50px;
+}
+	
+	#table th{
+		padding: 15px;
+	}
+
+#form{
+	height: 250px;
+	width: 310px;
+	border-top:grey solid;
+	text-align: right;
+	padding: 15px;
+}
+	
+	#form input{
+
+		padding: 2px;
+		margin-left: 30px;
+		margin-bottom: 20px;
+
+	}

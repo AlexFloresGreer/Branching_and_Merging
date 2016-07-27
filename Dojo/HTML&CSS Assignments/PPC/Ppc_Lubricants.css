@@ -1,0 +1,237 @@
+*{
+ margin: 0px; auto;
+ padding: 0px;
+}
+
+
+#wrapper{
+	border: 2px solid blue;
+	width: 990px;
+	margin-top: auto;
+	margin-right: auto;
+	margin-bottom: 10px;
+	margin-left: auto;
+	padding: 10px;
+
+	background:
+	radial-gradient(black 15%, transparent 16%) 0 0,
+	radial-gradient(black 15%, transparent 16%) 8px 8px,
+	radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+	radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+	background-color:#282828;
+	background-size:16px 16px;
+
+
+}
+
+#header_1{
+	background: linear-gradient(#ededed, #ededed, #ededed, white,  white);
+}
+	#header_1 img{
+		margin-top: 10px;
+		margin-right: 300px;
+		display: inline-block;
+	}
+
+	#header_1 p{
+		display: inline-block;vertical-align: bottom;
+		margin-bottom: 20px;
+		font-size: 22px;
+		font-weight: bold;
+		color: black;
+		font-family: Arial, Helvetica, sans-serif;
+		
+	}
+
+#header_2{
+	/*border: 2px solid blue;*/
+	width: auto;
+	height: 50px;
+	background-color: #ededed;
+	padding-top: 5px;
+	padding-left: 15px;
+	padding-right: 100px;
+	border-top: 1px solid grey;
+	border-right: 1px solid grey;
+	border-left: 1px solid grey;
+	overflow: hidden;
+}
+	#header_2 a{
+		font-size: 16px;
+		text-decoration: none;
+		color: slategrey;
+		font-weight: bold;
+
+	}
+
+
+	#header_2 ul{
+		margin-left: 30px;
+
+
+	}
+
+	#header_2 li{
+		display: inline;
+		top: 5px;
+		/*right: 150px;*/
+		border-left: 1px solid grey;
+		padding: 5px 15px;
+	}
+
+	#header_2 ul li:last-child{
+
+		border-right: 1px solid grey;
+	}
+	
+
+
+#box1{
+	
+	padding-left: 25px;
+	padding-top: 15px;
+	padding-right: 5px;
+	
+}
+	
+
+	#box1 img{
+		border: 5px solid white;
+		display: inline-block,
+
+	}
+
+	#main_content{
+		display: inline-block; vertical-align: top;
+		width: 525px;
+		margin-top: 0px;
+		background: linear-gradient(to bottom right, 
+			darkgray, black);
+		height: 265px;
+
+	}
+
+	#main_content p{
+		margin:10px 15px;
+		font-size: 13px;
+	}
+
+	#main_content span{
+		font-weight: bold;
+	}
+
+	#main_content h2{
+		background: linear-gradient(yellow, gold, gold, yellow);
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 18px;
+	}
+
+
+	#main_content h3{
+		font-size: 16px;
+		margin-top: 10px;
+	}
+	
+	#main_content h3, p{
+		color: white;
+		margin-left: 10px;
+	}
+	
+
+#box2{
+	
+	padding: 5px 50px;
+	height: 30px;
+
+	}
+
+	#box2 img{
+	width: 80px;
+    height: 20px;
+    display: inline-block;
+    margin-top: 5px;
+
+	}
+
+	#box2 p{
+		color: gold;
+		font-size: 12px;
+		display: inline-block; vertical-align: top;
+		margin-top: 10px;
+
+	}
+
+#box3{
+	padding-bottom: 20px;
+
+}
+
+
+	#box3 #automotive, #commercial, #industrial, #diesel{
+		display: inline-block;
+		vertical-align: top;
+		margin-left: 30px;
+		height: 300px;
+		width: 200px;
+
+	}
+
+	#box3 img{
+		width: 200px;
+
+	}
+
+	#box3 .title{
+		background: linear-gradient(yellow, gold, gold, yellow);
+		color: black;
+		width: 193px;
+		height: 20px;
+		margin-top: 0px;
+		margin-left: 0px;
+		margin-bottom: 0px;
+		padding-left: 5px;
+		padding-top: 5px;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 13px;
+		font-weight: bold;
+	
+	}
+
+	#box3 .content{
+		width: 181px;
+		height: 125px;
+		margin-left: -2px;
+		padding: 10px;
+		margin-top: -5px;
+		color: black;
+		background-color: white;
+		font-size: 14px;
+}
+
+	#buttonbox{
+		/*border: red solid;*/
+		width: 181px;
+		height: 25px;
+		margin-left: -2px;
+		padding: 10px;
+		margin-top: -5px;
+		color: black;
+		background-color: white;
+		font-size: 14px;
+
+
+	}
+
+	.button {
+	background-color: gold;
+    color: black;
+    border: black solid;
+    padding: 5px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    cursor: pointer;
+    margin-left: 60px;
+ 
+	}

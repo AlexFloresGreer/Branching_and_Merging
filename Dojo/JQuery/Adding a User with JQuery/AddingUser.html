@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Adding a user with JQ</title>
+		<meta name="description" content= "This is an assignment to learn JQuery">
+		<link rel="stylesheet" type="text/css" href="AddingUser.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+		<script type="text/javascript">
+
+
+// Functions outside .ready go here
+			
+			
+
+//.ready starts here!		
+			$(document).ready(function(){	
+				$('#form').submit(function(){ 
+					$('#table').append('<tr><td>' + $('#first').val() + '</td><td>' + $('#last').val() + '</td><td>' + $('#email').val() + '</td><td>' + $('#contact').val() + '</td></tr>');
+					// $("text_input").val("");
+					// return false;
+				}); 
+		
+
+// alert button
+			$('form').submit(function(){alert('you submitted me!');
+			});
+// return false when submitting form
+			$('form').submit(function(){
+    			return false;
+			});
+
+
+// .ready ends here!
+			}); 
+
+		</script>
+	</head>
+	<body> 
+<!-- HTML starts here! -->
+	<div id="wrapper">
+		<h1> Adding a User wiht JQuery</h1>
+		<table id="table">	
+			<tr>
+				<th>First Name</th>
+				<th>Last Name</th>
+				<th>Email Address</th>
+				<th>Contact#</th>
+			</tr>
+
+		</table>
+		<h2> Add User</h2>
+		
+		<br>
+		<form id="form">
+		    	First Name:<input type="text" class="text_input" name="first_name" value="First Name" id="first">
+		   	 	Last Name:<input type="text" class="text_input" name="last_name" value="Last Name" id="last">
+		    	Email Address:<input type="text" class="text_input" name="email" value="Email Address" id="email">
+		   		Contact #:<input type="text" class="text_input" name="first_name" value="Phone #" id="contact">
+		   		<input type="submit" name="submit" value="Submit" id="submit">
+		</form>
+
+
+
+
+<!-- HTML ends here! -->
+	</div> <!--wrapper ends here-->
+	</body>
+</html>

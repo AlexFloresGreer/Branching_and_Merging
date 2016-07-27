@@ -1,0 +1,239 @@
+*{
+ margin: 0px; auto;
+ padding: 0px;
+ font-family: "Tahoma";
+}
+
+#wrapper{
+	width: 966px;
+	margin: 0px auto;
+	padding:5px;
+}
+
+#logo{
+
+	height: 90px;
+	width: 960px;
+	padding:10px 5px 10px 5px;
+	margin-bottom: -5px;
+	background:
+	radial-gradient(black 15%, transparent 16%) 0 0,
+	radial-gradient(black 15%, transparent 16%) 8px 8px,
+	radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+	radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+	background-color:#282828;
+	background-size:16px 16px;
+	margin-top: 5px;
+	padding: 5px;
+	background: linear-gradient(grey, black, black)
+}
+
+	#logo img{
+		display: inline-block;
+		margin-left: 20px;
+	}
+	#logo p{
+		color: white;
+		font-size: 18px;
+		display: inline-block;
+		vertical-align: top;
+		margin-left: 500px;
+		margin-top: 20px;
+
+	}
+
+
+#header{
+	width: 960px;
+	height: 50px;
+	color:lightgrey;
+	background:
+	radial-gradient(black 15%, transparent 16%) 0 0,
+	radial-gradient(black 15%, transparent 16%) 8px 8px,
+	radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+	radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+	background-color:#282828;
+	background-size:16px 16px;
+	margin-top: 5px;
+	padding: 5px;
+	background: linear-gradient(grey, black, black)
+
+	}
+
+	#header a{
+		text-decoration: none;
+		color: ghostwhite;
+		font-weight: bold;
+		font-size: 12px;
+
+
+	}
+
+	#header ul li{
+		display:  inline;
+
+	}
+	
+	#header li{
+		border-right: grey solid;
+		padding: 2px 5px 2px 5px;
+	
+	}
+
+	#header ul li:last-child{
+		border-right: none;
+	}
+
+#box1 img{
+	margin-right: 3px;
+	margin-bottom: -3px;
+	width:969px
+
+}
+
+
+#box2{
+	width: 950px;
+	height: 90px;
+	padding-top:10px;
+	padding-left: 20px;
+	background:
+	radial-gradient(black 15%, transparent 16%) 0 0,
+	radial-gradient(black 15%, transparent 16%) 8px 8px,
+	radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+	radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+	background-color:#282828;
+	background-size:16px 16px;
+
+}
+
+	#icon1, #icon2, #icon3, #icon4{
+		width: 220px;
+		height: 80px;
+		padding: 2px;
+		margin-bottom: 30px;
+		display: inline-block;
+		vertical-align: top;
+		color: white;
+		font-size: 10px;
+	
+	}
+	
+	.content1, .content2, .content3, .content4 {
+		
+		width: 160px;
+		height: 80px;
+		display: inline-block;
+		vertical-align: top;
+	}
+
+
+#box3{
+	background-color: black;
+	height: 90px;
+	width: 965px;
+	padding-left: 5px;
+	padding-top: 5px;
+
+}
+
+	#box3 h2{
+		color: white;
+		width: 545px;
+		font-size: 18px;
+		margin-bottom: 15px;
+		display: block;
+	}
+
+	#box3 p{
+		color: white;
+		font-size: 12px;
+		width: 545px;
+		margin:2px;
+		display: inline-block;
+		
+
+	}
+
+	#box3 button{
+		display: inline-block;
+		vertical-align: top;
+		padding: 7px 20px 7px 20px;
+		margin-left: 180px;
+		margin-bottom: 0px;
+		background-color: orange;
+		color: white;
+		border-radius: 7px;
+		cursor: pointer;
+	}
+
+
+#box4{
+	height: 400px;
+	width: 961px;
+	background:
+	radial-gradient(black 15%, transparent 16%) 0 0,
+	radial-gradient(black 15%, transparent 16%) 8px 8px,
+	radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+	radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+	background-color:#282828;
+	background-size:16px 16px;
+	padding:5px;
+}
+	#topbox4 {
+		height: 60px;
+		width: auto;
+		padding: 7px;
+
+	}
+
+	#topbox4 h3{
+		color:white;
+		font-size: 15px;
+		display: inline;
+		margin-left: 10px;
+
+	}
+
+	#topbox4 h5{
+		color: orange;
+		font-style: italic;
+		font-size: 12px;
+		display: inline;
+		margin-left: 700px;
+	}
+
+
+	h4{
+	color: orange;
+	font-size: 14px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+
+	}
+
+	
+	#girl , #bus , #couple, #city{
+		width: 205px;
+		padding: 10px;
+		display: inline-block;
+		vertical-align: top;
+		margin-left: 5px;
+
+	}
+
+	#girl , #bus, #couple, #city img{
+		width:200px;
+	}
+
+	#box4 p{
+		color: white;
+		font-size: 12px;
+	}
+
+	.tiny{
+		margin-top: 50px;
+		font-size: 12px;
+		color:	grey;
+		margin-left: 800px;
+	}

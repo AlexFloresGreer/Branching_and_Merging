@@ -1,0 +1,144 @@
+*{
+ margin: 0px; auto;
+ padding: 0px;
+} 
+
+#wrapper{
+	width: 1000px;
+	margin: 0px auto;
+	background-color: #EEEEEE;
+}
+	
+	#wrapper li{
+		font-size: 10px;
+		text-align: center;
+	}
+
+	#wrapper h1{
+		font-size: 16px;
+	}
+
+
+ul{
+	list-style:none;
+}
+
+	ul li{
+		height: 42px;
+		width: 42px;
+		margin: 1px 0px 1px 0px;
+	}
+
+#top_numbers{
+	display: inline-block;
+
+	
+}
+
+	#top_numbers li{
+		display: inline-block;
+		vertical-align: top;
+	}
+
+	#top_numbers ul li{
+		border:none;
+	}
+
+#side_numbers{
+	display: inline-block;
+	vertical-align: top;
+	padding-top: 10px;
+}
+
+#top_numbers, #side_numbers{
+	color: red;
+	border:white;
+	font-weight: bold;
+}
+
+	#top_numbers, #side_numbers li{
+		border:none;
+	}
+
+#side_numbers, .blue, .blue2, .pink1, .pink, .yellow{
+	display: inline-block;
+}
+
+/*don't touch anything above*/
+
+#leftgreen{
+	display: inline-block;
+	vertical-align: top;
+}
+
+#greenbox{
+	display: inline-block;
+}
+
+.green1, .green2, .green3, .green4, .green5, .green6, .green7, .green8, .green9, .green10, .green11, .green12, .green13, .green14{
+		display: inline-block;
+}
+
+.green1 li, .green2 li, .green3 li, .green4 li, .green5 li, .green6 li, .green7 li, .green8 li, .green9 li, .green10 li, .green11 li, .green12 li, .green13 li, .green14 li{
+		background-color: lightgreen;
+}
+
+
+	.blue li, .blue1 li{
+	background-color: lightblue;
+	}
+
+	#blue2{
+		margin-right: 5px;
+	}
+
+	.blue h1, .blue1 h1{
+		color: darkblue;
+	}
+
+	.pink li{
+	background-color: pink;
+	}
+	
+
+	.pink h1{
+		color: darkblue;
+}
+
+	.yellow li{
+	background-color: lightyellow;
+	}
+	
+	.yellow h1{
+		color: darkblue;
+	}
+
+.green1, .green2, .green3, .green4, .green5, .green6, .green7, .green8, .green9, .green10, .green11, .green12, .green13, .green14 h1{
+	color: darkblue;
+}
+
+#section, #pink1, .green1{
+	margin-left: 7px;
+}
+
+#leftgreen{
+	padding-top: 10px;
+	width:150px
+	margin-right:20px;
+}
+
+	#leftgreen li{
+		margin-left:45px;
+		border:none;
+		color: red;
+		font-weight: bold;
+
+	}
+
+#greenbox, #leftgreen{
+	margin-top: 25px;
+}
+
+#greenbox{
+	margin-left: 53px;
+}

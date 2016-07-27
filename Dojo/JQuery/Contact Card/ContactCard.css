@@ -1,0 +1,67 @@
+*{
+ margin: 0px; auto;
+ padding: 0px;
+ font-family: "Tahoma";
+}
+
+#wrapper{
+	width: 960px;
+	margin: 0px auto;
+	padding: 25px;
+	border:grey solid;
+
+}
+
+h1{
+	height: 100px;
+	text-align: center;
+	margin-left: 315px;
+}
+
+label{
+	display: block;
+}
+
+#input{
+    display: inline-block;
+    
+}
+
+button{
+	margin-top: 50px;
+	padding: 10px;
+}
+
+#output {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+	#output div {
+	    border: 1px dashed #000;
+	}
+
+.initial {
+    height: 100px;
+    width: 100px;
+    margin: 5px;
+}
+
+#form{
+	height: 250px;
+	width: 310px;
+	padding: 15px;
+	margin-bottom: 35px;
+	margin-left: 15px;
+	border:grey solid;
+	text-align: right;
+	display: inline-block;
+}
+	
+	#form input{ 
+		margin-left: 30px;
+		margin-bottom: 20px;
+		margin-right: 20px;
+	}
+
+	
