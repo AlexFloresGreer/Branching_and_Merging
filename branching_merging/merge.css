@@ -1,0 +1,18 @@
+body{
+  background-color: black;
+
+}
+
+p, h1{
+  color: white;
+
+}
+
+img{
+  display: inline-block;
+  border: white solid;
+  height: 600px;
+  width: 600px;
+  padding: 15px;
+ margin: 5px;
+}
