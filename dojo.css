@@ -1,0 +1,15 @@
+body{
+  background-color: black;
+
+}
+
+p, h1{
+  color: white;
+}
+
+img{
+  display: inline-block;
+  height: 400px;
+  width: 400px;
+  padding: 10px;
+}
