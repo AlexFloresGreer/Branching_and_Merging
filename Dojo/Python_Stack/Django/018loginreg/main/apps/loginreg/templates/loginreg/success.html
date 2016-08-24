@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>My FLASK coding Registration Page</title>
+    {%load staticfiles%}
+   <link rel="stylesheet" href="{% static 'loginreg/css/loginreg.css' %}" media="screen" title="no title"  charset="utf-8">
+  <body>
+
+      <p>Welcome user {{request.session.user}}</p>
+      {% if messages %}
+      <ul class="messages">
+          {% for msg in messages %}
+              <div class="alert alert-{{msg.5_info}}" role="alert">
+            {{msg.message}}
+          </div>
+          {% endfor %}
+      </ul>
+    {% endif %}
+    <form action='/logout' method = 'post'>
+     {% csrf_token %}
+    	<input type='submit' value='Logout'>
+    </form>
+
+  </body>
+</html>

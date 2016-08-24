@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Login</title>
+
+  </head>
+  <body>
+    <div id="signin">
+    <h3>Sign In!</h3>
+    <form action='/signinprocess' method='post'>
+        {% csrf_token %}
+        E-Mail: <input type="text" name="email"><br><br>
+        Password: <input type="password" name="password"><br><br>
+        <input type="submit" value="login">
+    </form>
+    <!-- LOGTAGS -->
+      {% if messages %}
+            {% for msg in messages %}
+              {% if 'logtag' in msg.tags%}
+                <p class="mess">{{msg.message}}</p>
+              {%endif%}
+            {% endfor %}
+      {% endif %}
+  <br>
+  <a href="/register">Don't have an account? Register.</a>
+  </div>
+
+
+  </body>
+
+  </body>
+</html>

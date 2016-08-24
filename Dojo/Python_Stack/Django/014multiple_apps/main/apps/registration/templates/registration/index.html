@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Email Validation</title>
+  </head>
+  <body>
+
+    {% if messages %}
+      {% for message in messages %}
+        <p>{{ message }}</p>
+      {% endfor %}
+    {% endif %}
+
+<!-- login -->
+    <h2>Login</h2>
+    <form action="{% url 'login' %}" method="post">
+      {% csrf_token %}
+      Email Address: <input type="input" name="email" value="enter email here">
+      <br><br>
+      Password: <input type="password" name="password" value="password">
+      <br><br>
+      <input type="submit" name="submit" value="submit">
+    </form>
+
+<!-- registration form -->
+    <h2>Register</h2>
+    <form action={% url 'process' %} method='POST'>
+      {% csrf_token %}
+       Name: <input type ="text"  name = "first_name">
+       <br><br>
+       Last Name: <input type ="text"  name = "last_name">
+       <br><br>
+       Email:<input type="text"  name="email">
+       <br><br>
+       Password: <input type ="password"  name = "password">
+       <br><br>
+       Confirm pw: <input type ="password"  name = "confirm_password">
+       <br><br>
+       Birthdate: <input type ="date"  name = "birthdate"> (optional)
+       <br><br>
+       <input type="submit" value="Submit">
+ </form>
+  </body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset = "UTF-8">
+    <title>Ninja</title>
+      {% load staticfiles %}
+     <link rel="stylesheet" href="{% static 'ninja/css/style.css' %}"media="screen" title="no title"  charset="utf-8">
+
+</head>
+<body>
+    {% if id == 'none' %}
+    <h1>No Ninjas Here</h1>
+    {% endif %}
+    <br>
+
+    <br>
+    {% if id == 'ninjas' %}
+        <img src="/static/ninja/leonardo.jpg">
+        <img src="/static/ninja/raphael.jpg">
+        <img src="/static/ninja/donatello.jpg">
+        <img src="/static/ninja/michelangelo.jpg">
+    {% endif %}
+
+    {% if id == 'blue' %}
+         <img src="/static/ninja/leonardo.jpg">
+    {% endif %}
+        <br>
+    {% if id == 'red' %}
+         <img src="/static/ninja/raphael.jpg">
+    {% endif %}
+        <br>
+    {% if id == 'purple' %}
+        <img src="/static/ninja/donatello.jpg">
+    {% endif %}
+        <br>
+    {% if id == 'orange' %}
+        <img src="/static/ninja/michelangelo.jpg">
+    {% endif %}
+
+
+    {% if id != "blue" and id != "red" and id != "orange" and id != "purple" and id != "none" and id != "ninjas" %}
+         <img src="/static/ninja/notapril.jpg">
+    {% endif %}
+
+
+</html>

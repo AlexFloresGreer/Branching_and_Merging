@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Add Book Review</title>
+    {%load staticfiles%}
+  <link rel="stylesheet" href="{% static 'loginreg/css/loginreg.css' %}" media="screen" title="no title"  charset="utf-8">
+  <body>
+    <div id="addbookreview">
+      <h2>Book Title goes here</h2>
+      <p>Autor: [name] goes here</p>
+
+      <p>Reviews for specific book go here</p>
+      <a href="#">Delete this review</a><br><br>
+
+
+      <form action='/showbookreview' method='post'>
+          {% csrf_token %}
+
+          Add a Review: <br>
+          <textarea name'reviewbook' rows="5" cols="50">reviews here...</textarea>
+          <br>rating:<SELECT NAME="bookrating">
+            <OPTION SELECTED>1
+            <OPTION> 1
+            <OPTION> 2
+            <OPTION> 3
+            <OPTION> 4
+            <OPTION> 5
+          </SELECT>
+          <br><br>
+          <input type="submit" value="Submit Review">
+      </form>

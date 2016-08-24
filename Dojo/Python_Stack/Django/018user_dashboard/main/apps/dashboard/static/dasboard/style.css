@@ -1,0 +1,48 @@
+*{
+margin: 0px;
+padding: 0px;
+font-family:Comic Sans MS, cursive, sans-serif;
+font-size: 14px;
+}
+body{
+	width: 960px;
+	padding: 50px;
+	margin: auto;
+
+}
+#registration{
+
+	margin-top:50px;
+	padding: 20px;
+	height: 400px;
+	width: 400px;
+	display: inline-block;
+	border: black solid;
+	text-align: left;
+}
+
+#login{
+	padding: 20px;
+	height: 200px;
+	width: 300px;
+	margin-top:50px;
+	margin-left: 25px;
+	display: inline-block;
+	vertical-align: top;
+	border: black solid;
+}
+
+h3{
+	font-weight: bolder;
+	font-size: 20px;
+	margin-bottom: 20px;
+}
+/*form{
+padding: 20px;
+}*/
+.mess{
+	color: red;
+}
+.green{
+color: green;
+}

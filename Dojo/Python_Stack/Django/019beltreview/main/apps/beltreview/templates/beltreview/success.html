@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>My FLASK coding Registration Page</title>
+
+  <body>
+
+      <p>Welcome user {{request.session.user}}</p>
+      {% if messages %}
+      <ul class="messages">
+          {% for msg in messages %}
+              <div class="alert alert-{{msg.5_info}}" role="alert">
+            {{msg.message}}
+          </div>
+          {% endfor %}
+      </ul>
+    {% endif %}
+    <form action='/logout' method = 'post'>
+     {% csrf_token %}
+    	<input type='submit' value='Logout'>
+    </form>
+
+  </body>
+</html>

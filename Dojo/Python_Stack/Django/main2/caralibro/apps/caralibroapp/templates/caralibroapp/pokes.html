@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Pokes</title>
+        <style>
+            .success{
+                color: green;
+            }
+        </style>
+    </head>
+    <body>
+        <a href="/logout">Logout</a><br>
+        <h1>Welcome, {{request.session.alias}}</h1>
+        {% if messages %}
+            {% for message in messages %}
+                <p{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</p>
+            {% endfor %}
+        {% endif %}
+        <p> # people poked you!</p><br>
+
+        <p>Alex poked you 72 times</p><br>
+
+        <p>People you may want to poke:<br>
+
+        <table>
+          <tr>
+            <th>Name</th>
+            <th>Alias</th>
+            <th>Email Address</th>
+            <th>Poke History</th>
+            <th>Action</th>
+
+          </tr>
+          {% for friend in friends %}
+          <tr>
+            <td>{{friend.first_name}}</a></td>
+            <td>{{friend.alias}}</td>
+            <td>{{friend.email}}</td>
+            <td>{{friend.pokes}}</td>
+            <td>
+              <form action="/total/{{friend.id}}" method="post">
+                <input type="button" name="poke" value="pokes">
+              </form>
+              </td>
+          </tr>
+          {% endfor %}
+        </table>
+
+    </body>
+</html>

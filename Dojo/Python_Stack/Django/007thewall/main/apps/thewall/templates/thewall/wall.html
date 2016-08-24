@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <title>The Wall</title>
+  <body>
+
+      <div id="header">
+        <h1>CodingDojoWall</h1>
+        {% for first_name in all_names: %}
+        {% if session['user_id'] == first_name['id']: %}
+        <p>Welcome {{ first_name['first_name'] }}</p>
+        <!--<a href="#">log off</a>-->
+        <!--{% endif %}-->
+        <!--{% endfor %}-->
+      </div>
+      <br>
+      <div id="forum">
+        <p>Post a message</p>
+        <form action='/message' method='POST' id="message">
+            <input type="text" name="message" value="post here..."/>
+            <input type="submit" value="Post a Message">
+        </form>
+        <hr>
+        <br>
+        <br>
+        <!--{% for message in all_messages[0] %}-->
+        <p>{{ message['first_name']}}  {{ message['created_at']}}</p>
+        <p>{{ message['message'] }}</p>
+
+        <a href="delete_message/{{ message['id'] }}">delete</a>
+      <!--forloop for comments that match message id  -->
+        <div id="indent_comments"
+            {% for comment in all_messages[1] %}
+            {% if comment['message_id'] == message['id'] %}
+            <p>{{ comment['first_name']}}  {{ comment['created_at']}}</p>
+            <p>{{ comment['comment'] }}</p>
+            <!--{% endif %}-->
+            <!--{% endfor %}-->
+            <form action='/comment/{{ message["id"] }}' method='POST' class="comment">
+                <input type="text" style name="comment" value="reply here..."/>
+                <input type="submit" value="Post a comment" class="comment">
+            </form>
+            <hr>
+        </div>
+            <!--{% endfor %}-->
+
+      </div>
+
+  </body>
+</html>

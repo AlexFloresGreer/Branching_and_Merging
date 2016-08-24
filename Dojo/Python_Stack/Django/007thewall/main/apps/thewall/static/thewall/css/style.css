@@ -1,0 +1,30 @@
+body {
+	padding: 10px auto auto 50px;
+	background-image: url('http://thecutestblogontheblock.com/wp-content/uploads/2012/06/mint-chevron-free-cute-summer-ocean-twitter-background.jpg') ;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif
+}
+
+
+#header{
+	text-align: center;
+}
+
+#header h1{
+	font-size:50px;
+	color: grey;
+}
+
+#indent_comments{
+	margin-left:150px;
+	font-sytle: ;
+
+}
+
+#forum{
+	margin-left:100px;
+
+}
+
+#registration{
+	margin-left: 100px;
+}

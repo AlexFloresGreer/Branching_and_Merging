@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Dashboard</title>
+
+  </head>
+  <body>
+    <div id="dashboard">
+      <h1>Manage Users</h1>
+      <input type="submit" name="new_user" value="Add new">
+
+      <table>
+        <tr>
+          <th>ID</th>
+          <th>name</th>
+          <th>email</th>
+          <th>created_at</th>
+          <th>user_level</th>
+          <th>Actions</th>
+
+
+        </tr>
+        <br>
+        {% for user in users%}
+
+        <tr>
+          <td>{{user.id}}</td>
+          <td>{{user.first_name}} {{user.last_name}}</td>
+          <td>{{user.email}}</td>
+          <td>{{user.created_at}}</td>
+          <td>{{user.user_level}}</td>
+          <td>  <a href="#">edit</a> <a href="#">remove</a></td>
+        </tr>
+        {% endfor %}
+
+    </div>
+  </body>
+
+  </body>
+</html>

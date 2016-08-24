@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Add Book Review</title>
+    {%load staticfiles%}
+  <link rel="stylesheet" href="{% static 'loginreg/css/loginreg.css' %}" media="screen" title="no title"  charset="utf-8">
+  <body>
+    <div id="addbook">
+      <h1>Add a New Book Title and Review:</h1>
+      <form action='/addbookreview' method='post'>
+          {% csrf_token %}
+          Book Title: <input type='text' name='title'><br><br>
+          Author:
+          <br><br>
+          Select from the list:<br>
+              <SELECT NAME="Fruit">
+                <OPTION SELECTED>
+                <OPTION> Stephen King
+                <OPTION> Alex Greer
+                <OPTION> Poki Greer
+              </SELECT>
+            Or add a new author:  <input type="text" name="author"><br><br>
+          Review: <br>
+          <textarea name'reviewbook' rows="5" cols="50">reviews here...</textarea>
+          <br>
+          <input type="submit" value="Add Book and Review">
+      </form>

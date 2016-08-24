@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset = "UTF-8">
+        <title>Document</title>
+</head>
+<body>
+    <h1>Survey Form</h1>
+
+    <form action='/process' method='post'>
+        {% csrf_token %}
+        Your Name:
+        <input type='text' name='name'>
+        <br>
+        Your Dojo Location
+        <select list="location" name="location">
+          <option value="Seattle">Seattle</option>
+          <option value="LA">LA</option>
+          <option value="SanFran">SanFran</option>
+          <option value="DC">DC</option>
+          <option value="NY">NY</option>
+        </select>
+        <br>
+        Favorite Language:
+        <select list="languages" name="language">
+          <option value="Python">Python</option>
+          <option value="JavaScript">JavaScript</option>
+          <option value="Ruby">Ruby</option>
+        </select>
+        <br>
+        Comment (optional):
+        <br>
+        <textarea type="text" cols="30" rows="10" name="comment"></textarea>
+        <br>
+        <input type="submit" value="Submit" name="button">
+
+</body>
+</html>
+
+
+
+
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+        <!--<meta charset = "UTF-8">-->
+        <!--<title>Document</title>-->
+<!--</head>-->
+<!--<body>-->
+    <!--<p>Random Word (attempt # {{request.session.count}})</p>-->
+    <!--{% csrf_token %}-->
+    <!--<p> {{random_string}}</p>-->
+    <!--<br>-->
+    <!--<form action="/" method = 'post'>-->
+         <!--{% csrf_token %}-->
+    <!--<input type="submit" value="Generate">-->
+    <!--</form>-->
+<!--</body>-->
+<!--</html>-->

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset = "UTF-8">
+        <title>Document</title>
+</head>
+<body>
+    <p>Thanks for submitting this form! You have submitted this form {{request.session.count}}</p>
+    <br>
+    <h1>Submitted Information</h1>
+    <p>Name:</p>{{request.session.name}}
+    <p>Dojo Location:{{request.session.location}}</p>
+    <p>Favorite Language:{{request.session.location}}</p>
+    <p>Comment:{{request.session.comment}}</p>
+    <form action="/">
+         <input type="submit" name="submit" value="Go Back">
+    </form>
+    <br><br>
+
+
+
+
+
+</body>
+</html>

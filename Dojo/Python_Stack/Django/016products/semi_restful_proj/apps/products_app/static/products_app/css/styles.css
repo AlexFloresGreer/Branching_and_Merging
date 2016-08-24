@@ -1,0 +1,40 @@
+* {
+  font-family: tahoma;
+}
+
+input {
+  display: block;
+}
+
+input.table-action {
+  display: inline;
+}
+
+
+form {
+
+  width: 300px;
+}
+
+table {
+    margin-top: 15px;
+    border-spacing: 0;
+}
+
+th,
+td {
+  border: 1px solid black;
+}
+
+td {
+  padding: 0 5px;
+}
+
+form.delete input {
+  display: inline;
+
+}
+
+form.delete  {
+  display: inline;
+}

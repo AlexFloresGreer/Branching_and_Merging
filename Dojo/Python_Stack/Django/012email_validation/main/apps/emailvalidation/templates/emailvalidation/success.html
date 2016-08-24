@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Success Page</title>
+  </head>
+  <body>
+
+    <p>The email address you entered {{ printemail }} is a valid email address! Thank you!</p>
+    <br>
+    <h2>Email Addresses Entered</h2>
+
+    {% for email in allemails %}
+    <p>email address and date created </p>
+    <p>{{email.email}} , {{email.created_at}}</p>
+    {% endfor %}
+
+  </body>
+</html>

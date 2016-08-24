@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Integration</title>
+  </head>
+  <body>
+
+
+    <form action="/integration/">
+      {% csrf_token %}
+<!-- User Options -->
+      <select name="Number_of_Users">
+        {% for user in users %}
+        <option value="Users">{{ user.first_name }}</option>
+        {% endfor %}
+      </select>
+<!-- Course options -->
+      <select name="Courses_Options">
+        {% for course in courses %}
+        <option value="Courses">{{ course.name }}</option>
+        {% endfor %}
+      </select>
+      <input type="submit" value="Add User To Course">
+    </form>
+
+    <table>
+        {% csrf_token %}
+        <tr>
+            <th>Course</th>
+            <th>Title</th>
+            <th>Number of Users</th>
+
+        </tr>
+<!-- Title -->
+        {% for course in courses %}
+        <tr>
+            <td>{{course.id}} </td>
+
+          <td>   {{ course.name }}</td>
+
+          <td> Empty </td>
+        </tr>
+          {% endfor %}
+    </table>
+        <br><br>
+        <a href="/registration"> Return Home</a>
+
+  </body>
+</html>

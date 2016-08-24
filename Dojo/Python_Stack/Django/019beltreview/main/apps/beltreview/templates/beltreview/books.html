@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Book Reviews</title>
+
+  <body>
+
+      <p>Welcome {{request.session.user}}</p>
+      {% if messages %}
+      <ul class="messages">
+          {% for msg in messages %}
+              <div class="alert alert-{{msg.5_info}}" role="alert">
+            {{msg.message}}
+          </div>
+          {% endfor %}
+      </ul>
+    {% endif %}
+    <form action='add' method = 'post'>
+     {% csrf_token %}
+      <input type='submit' value='Add Book Review'>
+    </form>
+    <form action='/logout' method = 'post'>
+     {% csrf_token %}
+    	<input type='submit' value='Logout'>
+    </form>
+
+    <h1>Recent Book Reviews</h1>
+    <B>Select some fruit:</B> <BR>
+        <SELECT NAME="bookreviews" SIZE="4" MULTIPLE >
+          <OPTION SELECTED> Apples
+          <OPTION> Twilight
+          <OPTION> Hello World
+          <OPTION> Teddy Bear
+        </SELECT>
+
+
+
+    <h1>Other Books with Reviews</h1>
+
+
+
+  </body>
+</html>
